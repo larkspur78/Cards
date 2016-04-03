@@ -6,7 +6,7 @@ from random import shuffle
 class Deck:
     #attributes should be accessible to entire Deck class,
     #which is why they are defined outside methods
-    #dictionary using a key/value pair
+    #dictionary uses a key/value pair
     #within the face_names attribute, a dictionary is defined, giving the face name
     #of a card in string form as the key, and the value for that face name as the
     #value part of that pair
@@ -23,7 +23,7 @@ class Deck:
     def __init__(self):
         #when you access through self, you are accessing the face names and suit
         #names of an actual deck
-        #setting up instructions for when you want to make a deck
+        #sets up instructions for when you want to make a deck
         #make_deck is local scope, but it can see things happening at the Deck
         #global level, which in this instance includes make_deck defined in method below
         self.deck = self.make_deck(self.face_names, self.suit_names)
@@ -37,7 +37,7 @@ class Deck:
         #computer goes to the first item in the suit_names list defined above - spades, for example.
         #in the second nested for loop, it retrieves, one by one using the items method,
         #the face and value for each spade card until it runs out of spade cards.
-        #It instantiates a new card with these values and after creation, adds that card the deck list using
+        #It instantiates a new card with these values and after creation, adds that card to the deck list using
         #the append list method ~ Append is a method that belongs to list ~
         #Then it goes back up to the top for loop and evaluates the next item in suit_names,
         #which might be hearts, for example. It retrieves the face and value pair for each heart card.

@@ -1,5 +1,5 @@
-class Card:
 #represents a standard playing card
+class Card:
     #this is what happens when you initialize a new card
     #self refers to the actual occurence of a card, such as "the Hannah version of a human"
     #suit-name, face-name and value give me the ability to set values on a card when it is created
